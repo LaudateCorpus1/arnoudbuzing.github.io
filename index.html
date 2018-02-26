@@ -8,6 +8,22 @@
 
 <body>
 <h1>hi</h1>
+
+<div id='aws'></div>
+
+<script>
+var x = new XMLHTTPRequest();
+x.onreadystatechange = function () {
+  if(this.readyState==4 && this.status==200) {
+    document.getElementById('aws').innerHTML = this.responseText;
+  }
+};
+x.open('POST', 'http://18.216.130.207', true);
+x.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+x.send('$MachineName');
+
+</script>
+
 </body>
 
 </html>
