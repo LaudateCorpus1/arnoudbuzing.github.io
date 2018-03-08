@@ -13,27 +13,32 @@
 }
 
 input[type=text] {
+  font-size: 24px;
   padding: 12px;
   margin: 8px;
   border: none;
   outline: none;
-  background-color: #DDDDDD;
+  width: 100%;
+  box-sizing : border-box;
   color: white;
+  background-color: #CCCCCC;
 }
 
 input[type=text]:focus {
-    background-color: #AAAAAA;
+  background-color: #CCCCCC;
 }
 
 .in {
   padding: 12px;
   margin: 8px;
-  background-color: #EEEEEE;
+  background-color: #CCCCCC;
 }
 .out {
+  font-size: 18px;
   padding: 12px;
   margin: 8px;
-  background-color: #EEEEEE;
+  color: white;
+  background-color: #AAAAAA;
 }
 
 </style>
@@ -41,14 +46,16 @@ input[type=text]:focus {
 <script>
 var count = 1;
 var t0,t1;
+var inputs = [];
 
 var ws = new WebSocket('wss://18.217.160.48:443', 'echo-protocol');
 
 ws.addEventListener("message", function(e) {
  var msg = e.data;
+ inputs.push(msg);
  t1 = performance.now();
  var old = document.getElementById('aws').innerHTML;
- document.getElementById('aws').innerHTML = "<div class='out'>(" + Math.round(t1-t0) + " ms) Out["+count+"] = " + msg + "</div>" + old;
+ document.getElementById('aws').innerHTML = "<div class='out'>" + msg + "</div>" + old;
  count+=1;
 });
 
@@ -72,7 +79,7 @@ function keyHandler(e) {
 </head>
 
 <body>
- <div id='in'>
+ <div class='in'>
  <form id='form'>
   <input type='text' id='message' onkeypress='return keyHandler(event)'></input>
  </form>
