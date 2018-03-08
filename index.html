@@ -8,8 +8,6 @@
 <script>
 var count = 1;
 
-document.getElementById('prompt').innerHTML = 'In['+count+'] := ';
-
 var ws = new WebSocket('wss://18.217.160.48:443', 'echo-protocol');
 
 ws.addEventListener("message", function(e) {
@@ -48,5 +46,9 @@ function keyHandler(e) {
 
 
 </body>
+
+<script>
+document.getElementById('prompt').innerHTML = 'In['+count+'] := ';
+</script>
 
 </html>
