@@ -8,12 +8,15 @@
 <script>
 var count = 1;
 
+document.getElementById('in').innerHTML = 'In['+count+'] := ';
+
 var ws = new WebSocket('wss://18.217.160.48:443', 'echo-protocol');
 
 ws.addEventListener("message", function(e) {
  var msg = e.data;
  var old = document.getElementById('aws').innerHTML;
- document.getElementById('aws').innerHTML = 'Output['+(count++)+']: ' + msg + '<br><br>' + old;
+ document.getElementById('aws').innerHTML = 'Out['+(count++)+'] = ' + msg + '<br><br>' + old;
+ document.getElementById('in').innerHTML = 'Input['+count+']';
 });
 
 function sendMessage() {
@@ -38,7 +41,7 @@ function keyHandler(e) {
 <h1>wolfram language</h1>
 
 <form id='form'>
-Input: <input type='text' id='message' onkeypress='return keyHandler(event)'></input>
+<span id='in'></span> <input type='text' id='message' onkeypress='return keyHandler(event)'></input>
 </form>
 
 <div id='aws'></div>
