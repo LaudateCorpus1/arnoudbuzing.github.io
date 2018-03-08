@@ -9,7 +9,7 @@
 var ws = new WebSocket('wss://18.217.160.48:443', 'echo-protocol');
 ws.addEventListener("message", function(e) {
  var msg = e.data;
- document.getElementById('aws').innerHTML += msg;
+ document.getElementById('aws').innerHTML = 'Output: ' + msg;
 });
 
 </script>
@@ -19,7 +19,7 @@ ws.addEventListener("message", function(e) {
 <body>
 <h1>hi</h1>
 
-<div id='aws'>hello: </div>
+<div id='aws'>Output: </div>
 
 
 </body>
