@@ -33,7 +33,7 @@ ws.addEventListener("message", function(e) {
  var msg = e.data;
  t1 = performance.now();
  var old = document.getElementById('aws').innerHTML;
- document.getElementById('aws').innerHTML = '<div class='out'>(' + Math.round(t1-t0) + ' ms) Out['+count+'] = ' + msg + '</div>' + old;
+ document.getElementById('aws').innerHTML = "<div class='out'>(" + Math.round(t1-t0) + "' ms) Out["+count+"'] = " + msg + "</div>" + old;
  count+=1;
 });
 
