@@ -15,7 +15,7 @@ ws.addEventListener("message", function(e) {
  var msg = e.data;
  t1 = performance.now();
  var old = document.getElementById('aws').innerHTML;
- document.getElementById('aws').innerHTML = '(' + (t1-t0) + ' ms) Out['+(count++)+'] = ' + msg + '<br><br>' + old;
+ document.getElementById('aws').innerHTML = '(' + Math.round(t1-t0) + ' ms) Out['+(count++)+'] = ' + msg + '<br><br>' + old;
  document.getElementById('prompt').innerHTML = 'In['+count+'] := ';
 });
 
