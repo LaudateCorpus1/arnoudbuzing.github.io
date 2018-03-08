@@ -6,17 +6,20 @@
  <title>arnoudbuzing</title>
 
 <script>
+var count = 1;
+
 var ws = new WebSocket('wss://18.217.160.48:443', 'echo-protocol');
 
 ws.addEventListener("message", function(e) {
  var msg = e.data;
- document.getElementById('aws').innerHTML = 'Output: ' + msg;
+ var old = document.getElementById('aws').innerHTML;
+ document.getElementById('aws').innerHTML = 'Output['+(count++)+']: ' + msg + '<br>' + old;
 });
 
 function sendMessage() {
   var message = document.getElementById('message').value;
   ws.send(message);
-  document.getElementById('form').reset();    
+  document.getElementById('form').reset();
 }
 
 function keyHandler(e) {
