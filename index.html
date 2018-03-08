@@ -48,12 +48,13 @@ input[type=text]:focus {
 var count = 1;
 var t0,t1;
 var inputs = [];
+var outputs = [];
 
 var ws = new WebSocket('wss://18.217.160.48:443', 'echo-protocol');
 
 ws.addEventListener("message", function(e) {
  var msg = e.data;
- inputs.push(msg);
+ outputs.push(msg);
  t1 = performance.now();
  var old = document.getElementById('aws').innerHTML;
  document.getElementById('aws').innerHTML = "<div class='out'>" + msg + "</div>" + old;
@@ -62,6 +63,7 @@ ws.addEventListener("message", function(e) {
 
 function sendMessage() {
   var message = document.getElementById('message').value;
+  inputs.push(message);
   ws.send(message);
   document.getElementById('form').reset();
 }
