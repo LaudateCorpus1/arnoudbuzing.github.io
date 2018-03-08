@@ -26,6 +26,10 @@ input[type=text]:focus {
     background-color: #AAAAAA;
 }
 
+.in {
+  padding: 12px;
+  margin: 8px;
+}
 .out {
   padding: 12px;
   margin: 8px;
@@ -44,7 +48,7 @@ ws.addEventListener("message", function(e) {
  var msg = e.data;
  t1 = performance.now();
  var old = document.getElementById('aws').innerHTML;
- document.getElementById('aws').innerHTML = "<div class='out'>(" + Math.round(t1-t0) + "' ms) Out["+count+"'] = " + msg + "</div>" + old;
+ document.getElementById('aws').innerHTML = "<div class='out'>(" + Math.round(t1-t0) + " ms) Out["+count+"] = " + msg + "</div>" + old;
  count+=1;
 });
 
@@ -68,10 +72,11 @@ function keyHandler(e) {
 </head>
 
 <body>
+ <div id='in'>
  <form id='form'>
   <input type='text' id='message' onkeypress='return keyHandler(event)'></input>
  </form>
- <br><br>
+</div>
  <div id='aws'></div>
 </body>
 </html>
