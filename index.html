@@ -14,7 +14,7 @@ ws.addEventListener("message", function(e) {
  var msg = e.data;
  var old = document.getElementById('aws').innerHTML;
  document.getElementById('aws').innerHTML = 'Out['+(count++)+'] = ' + msg + '<br><br>' + old;
- document.getElementById('prompt').innerHTML = 'Input['+count+']';
+ document.getElementById('prompt').innerHTML = 'In['+count+'] := ';
 });
 
 function sendMessage() {
