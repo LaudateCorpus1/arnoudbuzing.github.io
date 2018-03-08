@@ -7,17 +7,36 @@
 
 <script>
 var ws = new WebSocket('wss://18.217.160.48:443', 'echo-protocol');
+
 ws.addEventListener("message", function(e) {
  var msg = e.data;
  document.getElementById('aws').innerHTML = 'Output: ' + msg;
 });
 
+function sendMessage() {
+  var message = document.getElementById('message').value;
+  ws.send(message);
+  document.getElementById('form').reset();    
+}
+
+function keyHandler(e) {
+  if(e.keyCode==13) {
+    sendMessage();
+    return false;
+  } else {
+    return true;
+  }
+}
 </script>
 
 </head>
 
 <body>
 <h1>hi</h1>
+
+<form id='form'>
+<input type='text' id='message' onkeypress='return keyHandler(event)'></input>
+</form>
 
 <div id='aws'>Output: </div>
 
