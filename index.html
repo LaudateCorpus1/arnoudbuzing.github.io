@@ -13,6 +13,7 @@
 }
 
 input[type=text] {
+  width: 100%;
   padding: 12px;
   margin: 8px;
   border: none;
@@ -68,7 +69,7 @@ function keyHandler(e) {
 
 <body>
  <form id='form'>
-  <input type='text' id='message' size='80' onkeypress='return keyHandler(event)'></input>
+  <input type='text' id='message' onkeypress='return keyHandler(event)'></input>
  </form>
  <br><br>
  <div id='aws'></div>
