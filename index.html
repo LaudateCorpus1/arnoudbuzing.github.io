@@ -3,7 +3,18 @@
 <html>
 
 <head>
-<title>arnoudbuzing</title>
+ <title>arnoudbuzing</title>
+
+<script>
+var ws = new WebSocket('wss://18.217.160.48:443', 'echo-protocol');
+ws.addEventListener("message", function(e) {
+ var msg = e.data;
+ document.getElementById('aws').innerHTML += msg;
+});
+ws.send('$MachineName');
+
+</script>
+
 </head>
 
 <body>
@@ -11,18 +22,6 @@
 
 <div id='aws'></div>
 
-<script>
-var x = new XMLHttpRequest();
-x.onreadystatechange = function () {
-  if( x.readyState==4 && x.status==200 ) {
-    document.getElementById('aws').innerHTML = x.responseText;
-  }
-};
-x.open('POST', 'http://18.216.130.207', true);
-x.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-x.send('$MachineName');
-
-</script>
 
 </body>
 
