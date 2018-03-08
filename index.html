@@ -7,13 +7,15 @@
 
 <script>
 var count = 1;
+var t0,t1;
 
 var ws = new WebSocket('wss://18.217.160.48:443', 'echo-protocol');
 
 ws.addEventListener("message", function(e) {
  var msg = e.data;
+ t1 = performance.now();
  var old = document.getElementById('aws').innerHTML;
- document.getElementById('aws').innerHTML = 'Out['+(count++)+'] = ' + msg + '<br><br>' + old;
+ document.getElementById('aws').innerHTML = '(' + (t1-t0) + ' ms) Out['+(count++)+'] = ' + msg + '<br><br>' + old;
  document.getElementById('prompt').innerHTML = 'In['+count+'] := ';
 });
 
@@ -25,6 +27,7 @@ function sendMessage() {
 
 function keyHandler(e) {
   if(e.keyCode==13) {
+    t0 = performance.now();
     sendMessage();
     return false;
   } else {
