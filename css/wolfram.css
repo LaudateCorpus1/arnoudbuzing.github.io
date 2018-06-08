@@ -23,7 +23,7 @@ h3 {
 }
 
 .head {
-  background-image: url('../img/head.jpg');
+  background-image: url('/img/head.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 16em;
