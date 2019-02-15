@@ -1,4 +1,6 @@
-head = StringTemplate[
+template = <|
+
+"head" -> StringTemplate[
 "<!doctype html>
 
 <html>
@@ -15,32 +17,40 @@ head = StringTemplate[
 <body>
 
 <div class='pure-g'>
-"];
+"]
 
-h1 = StringTemplate[
+,
+
+"h1" -> StringTemplate[
 "
 <div class='pure-u-1-1'>
   <div class='head'>
   <h1>`text`</h1>
   </div>
 </div>
-"];
+"]
 
-h2 = StringTemplate[
+,
+
+"h2" -> StringTemplate[
 "
 <div class='pure-u-1-1'>
   <h2>`text`</h2>
 </div>
-"];
+"]
 
-lede = StringTemplate[
+,
+
+"lede" -> StringTemplate[
 "
 <div class='pure-u-1-1'>
   <p class='lede'>`text`</p>
 </div>
-"];
+"]
 
-box = StringTemplate[
+,
+
+"box" -> StringTemplate[
 "
 <div class='pure-u-1 pure-u-md-1-3'>
   <div class='l-box'>
@@ -49,9 +59,11 @@ box = StringTemplate[
     <a class='pure-button' href='`href`'>More&hellip;</a>
   </div>
 </div>
-"];
+"]
 
-footer =
+,
+
+"footer" ->
 "
 <div class='pure-u-1-1'>
   <div class='footer'>
@@ -63,4 +75,6 @@ footer =
 </body>
 
 </html>
-";
+"
+
+|> ;
