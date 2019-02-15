@@ -1,9 +1,10 @@
-<!doctype html>
+head = StringTemplate[
+"<!doctype html>
 
 <html>
 
 <head>
-  <title>Home</title>
+  <title>`title`</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
   <link href='/css/pure-release-1.0.0/pure-min.css' rel='stylesheet'>
@@ -14,29 +15,44 @@
 <body>
 
 <div class='pure-g'>
+"];
 
+h1 = StringTemplate[
+"
 <div class='pure-u-1-1'>
   <div class='head'>
-  <h1>Home</h1>
+  <h1>`text`</h1>
   </div>
 </div>
+"];
 
+h2 = StringTemplate[
+"
 <div class='pure-u-1-1'>
-  <h2>Projects I am working on</h2>
+  <h2>`text`</h2>
 </div>
+"];
 
+lede = StringTemplate[
+"
 <div class='pure-u-1-1'>
-  <p class='lede'>I am working on a number of projects related to the Wolfram Language. Here are some of the largest and most active ...</p>
+  <p class='lede'>`text`</p>
 </div>
+"];
 
+box = StringTemplate[
+"
 <div class='pure-u-1 pure-u-md-1-3'>
   <div class='l-box'>
-    <h3>Wolfram Language Developer Resources</h3>
-    <p>I am collecting and organizing web pages that are useful to people developing in the Wolfram Language: Editors and Development Environments, Language Binding user guides, Developer Communities, and more ...</p>
-    <a class='pure-button' href='wolfram/index.html'>More&hellip;</a>
+    <h3>`caption`</h3>
+    <p>`text`</p>
+    <a class='pure-button' href='`href`'>More&hellip;</a>
   </div>
 </div>
+"];
 
+footer =
+"
 <div class='pure-u-1-1'>
   <div class='footer'>
   </div>
@@ -47,3 +63,4 @@
 </body>
 
 </html>
+";
