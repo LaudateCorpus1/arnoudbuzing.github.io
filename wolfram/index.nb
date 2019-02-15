@@ -1,0 +1,295 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11078,        287]
+NotebookOptionsPosition[      8313,        231]
+NotebookOutlinePosition[      8661,        246]
+CellTagsIndexPosition[      8618,        243]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Wolfram Language", "Title",
+ CellChangeTimes->{{3.75925450766825*^9, 3.7592545124766483`*^9}, {
+   3.7592563991884913`*^9, 3.759256399628497*^9}, 3.759259011103176*^9, 
+   3.7592591190783105`*^9, {3.7592591843422313`*^9, 
+   3.7592591871982346`*^9}},ExpressionUUID->"efc65e53-0a0d-42b8-8ef5-\
+e94c7a5d94d6"],
+
+Cell[CellGroupData[{
+
+Cell["Developer Resources", "Chapter",
+ CellChangeTimes->{{3.759254538596363*^9, 3.7592545462199197`*^9}, {
+  3.759259202143306*^9, 
+  3.759259204798311*^9}},ExpressionUUID->"886746eb-c2b6-4b0e-92a9-\
+52fe508abbf1"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+The Wolfram Language integrates with many software components and tools, \
+making it possible to build rich interactive notebook interfaces and \
+innovative online services.\
+\>", "Subchapter",
+ CellChangeTimes->{{3.7592545499004517`*^9, 3.75925457646037*^9}, 
+   3.759259210978356*^9},ExpressionUUID->"bc08db69-2c2a-4b2a-a036-\
+8bf21a2b6a27"],
+
+Cell[CellGroupData[{
+
+Cell["Editors & Development Environments", "Section",
+ CellChangeTimes->{{3.759254581547898*^9, 3.759254586683911*^9}, 
+   3.7592592167793612`*^9},ExpressionUUID->"88cde30a-e0d5-4b91-9ed2-\
+faa0bf63be38"],
+
+Cell["\<\
+The Wolfram Language has been integrated into many editors and development \
+environments\
+\>", "Text",
+ CellChangeTimes->{3.759254617210271*^9, 
+  3.759259222824371*^9},ExpressionUUID->"bd30e318-073e-478f-9ffa-\
+5f806ab14eb1"],
+
+Cell["editors.html", "Text",
+ CellChangeTimes->{{3.759254654435692*^9, 3.7592546572510176`*^9}, {
+  3.759255768471407*^9, 3.759255771302414*^9}, {3.7592592290784073`*^9, 
+  3.759259229974409*^9}, {3.7592596658678904`*^9, 
+  3.759259666739888*^9}},ExpressionUUID->"4dc1d225-9834-4509-89cb-\
+9a4386acce43"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["GitHub Repositories", "Section",
+ CellChangeTimes->{{3.759254581547898*^9, 3.759254586683911*^9}, 
+   3.7592592167793612`*^9, 
+   3.7592593264559927`*^9},ExpressionUUID->"d787b60d-bc5d-478e-8121-\
+3f920fbde9de"],
+
+Cell["\<\
+GitHub is an online service to share source code for development projects. \
+Over 5,000 Wolfram Language projects are available on this site.\
+\>", "Text",
+ CellChangeTimes->{3.759254617210271*^9, 3.759259222824371*^9, 
+  3.7592593342890053`*^9},ExpressionUUID->"a5bb76b3-18c6-4e50-85a3-\
+536fbd11a347"],
+
+Cell["github.html", "Text",
+ CellChangeTimes->{{3.759254654435692*^9, 3.7592546572510176`*^9}, {
+  3.759255768471407*^9, 3.759255771302414*^9}, {3.7592592290784073`*^9, 
+  3.759259229974409*^9}, {3.7592593393180127`*^9, 3.759259340150014*^9}, {
+  3.759259668251893*^9, 
+  3.7592596691078925`*^9}},ExpressionUUID->"e3a51074-7ecc-48a5-b66d-\
+5353c3a61cf8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Programming Language Bindings", "Section",
+ CellChangeTimes->{{3.759254581547898*^9, 3.759254586683911*^9}, 
+   3.7592592167793612`*^9, {3.7592593264559927`*^9, 
+   3.759259356009096*^9}},ExpressionUUID->"15719378-b0f4-49e8-ac7c-\
+9efc24986a52"],
+
+Cell["\<\
+The Wolfram Language connects to many software components and has many useful \
+APIs\
+\>", "Text",
+ CellChangeTimes->{
+  3.759254617210271*^9, 3.759259222824371*^9, {3.7592593342890053`*^9, 
+   3.7592593626641045`*^9}},ExpressionUUID->"5d345090-efa9-433b-ac4d-\
+4e6a8f319498"],
+
+Cell["bindings.html", "Text",
+ CellChangeTimes->{{3.759254654435692*^9, 3.7592546572510176`*^9}, {
+  3.759255768471407*^9, 3.759255771302414*^9}, {3.7592592290784073`*^9, 
+  3.759259229974409*^9}, {3.7592593393180127`*^9, 3.7592593705411167`*^9}, {
+  3.759259670867896*^9, 
+  3.7592596720358973`*^9}},ExpressionUUID->"4e237e27-0fbb-464c-9d59-\
+a96b9ec7cbb7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Developer Communities", "Section",
+ CellChangeTimes->{{3.759254581547898*^9, 3.759254586683911*^9}, 
+   3.7592592167793612`*^9, 3.7592593264559927`*^9, 
+   3.7592593775193768`*^9},ExpressionUUID->"1a5ad3a9-61a9-4a91-88e7-\
+c66f68a65ffb"],
+
+Cell["\<\
+Places where Wolfram Language developers congregate and discuss programming \
+topics\
+\>", "Text",
+ CellChangeTimes->{3.759254617210271*^9, 3.759259222824371*^9, 
+  3.7592593342890053`*^9, 
+  3.7592593848156605`*^9},ExpressionUUID->"a9de1683-3c8b-49b6-990a-\
+35bccade315c"],
+
+Cell["communities.html", "Text",
+ CellChangeTimes->{{3.759254654435692*^9, 3.7592546572510176`*^9}, {
+  3.759255768471407*^9, 3.759255771302414*^9}, {3.7592592290784073`*^9, 
+  3.759259229974409*^9}, {3.7592593393180127`*^9, 3.759259340150014*^9}, {
+  3.7592593894386683`*^9, 3.759259392661697*^9}, {3.7592596747719336`*^9, 
+  3.759259675939933*^9}},ExpressionUUID->"1cd5f458-1077-494e-b68e-\
+cb6130a7e530"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Wolfram APIs", "Section",
+ CellChangeTimes->{{3.759254581547898*^9, 3.759254586683911*^9}, 
+   3.7592592167793612`*^9, 3.7592593264559927`*^9, 
+   3.7592594010727496`*^9},ExpressionUUID->"80a3f010-e1c5-4a4a-9ee4-\
+fede4984d102"],
+
+Cell["APIs provided by Wolfram, Wolfram|Alpha, and Wolfram Cloud", "Text",
+ CellChangeTimes->{3.759254617210271*^9, 3.759259222824371*^9, 
+  3.7592593342890053`*^9, 
+  3.7592594061602063`*^9},ExpressionUUID->"89665f40-5605-47d0-a98b-\
+19889d221c72"],
+
+Cell["github.html", "Text",
+ CellChangeTimes->{{3.759254654435692*^9, 3.7592546572510176`*^9}, {
+  3.759255768471407*^9, 3.759255771302414*^9}, {3.7592592290784073`*^9, 
+  3.759259229974409*^9}, {3.7592593393180127`*^9, 3.759259340150014*^9}, {
+  3.7592596773959374`*^9, 
+  3.759259678523939*^9}},ExpressionUUID->"ad41e2e5-9336-46e8-bc90-\
+cb0907dd69d2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Online Service Connections", "Section",
+ CellChangeTimes->{{3.759254581547898*^9, 3.759254586683911*^9}, 
+   3.7592592167793612`*^9, 3.7592593264559927`*^9, 
+   3.7592594357676992`*^9},ExpressionUUID->"0f5b1657-612d-484e-83d9-\
+d06dd7a76782"],
+
+Cell["\<\
+The Wolfram Language has built-in support for a growing number of external \
+services. Some of these services are freely accessible to all Wolfram \
+Language users; others require separate authorization from service providers.\
+\>", "Text",
+ CellChangeTimes->{3.759254617210271*^9, 3.759259222824371*^9, 
+  3.7592593342890053`*^9, 
+  3.759259440575786*^9},ExpressionUUID->"b73f317f-0538-4333-8b1b-\
+e7dfea1a6b1b"],
+
+Cell["\<\
+http://reference.wolfram.com/language/guide/\
+ListingOfSupportedExternalServices.html\
+\>", "Text",
+ CellChangeTimes->{{3.759254654435692*^9, 3.7592546572510176`*^9}, {
+  3.759255768471407*^9, 3.759255771302414*^9}, {3.7592592290784073`*^9, 
+  3.759259229974409*^9}, {3.7592593393180127`*^9, 3.759259340150014*^9}, {
+  3.7592594580709777`*^9, 
+  3.7592594617029843`*^9}},ExpressionUUID->"5cf75334-ab0b-4eb2-9b6c-\
+d4b15c0d039e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Developer Blogs", "Section",
+ CellChangeTimes->{{3.759254581547898*^9, 3.759254586683911*^9}, 
+   3.7592592167793612`*^9, 3.7592593264559927`*^9, 3.7592594357676992`*^9, 
+   3.7592595009745846`*^9},ExpressionUUID->"678bcee8-0bdb-415d-a609-\
+741922762faa"],
+
+Cell["\<\
+Blogs and web sites of experienced Wolfram Language developers, with tips, \
+tricks, examples, and inspiration \[Ellipsis]\
+\>", "Text",
+ CellChangeTimes->{3.759254617210271*^9, 3.759259222824371*^9, 
+  3.7592593342890053`*^9, 3.759259440575786*^9, 
+  3.759259508335598*^9},ExpressionUUID->"00028829-0221-4585-8b82-\
+c72b05423a4a"],
+
+Cell["blogs.html", "Text",
+ CellChangeTimes->{{3.759254654435692*^9, 3.7592546572510176`*^9}, {
+  3.759255768471407*^9, 3.759255771302414*^9}, {3.7592592290784073`*^9, 
+  3.759259229974409*^9}, {3.7592593393180127`*^9, 3.759259340150014*^9}, {
+  3.7592594580709777`*^9, 3.7592594617029843`*^9}, {3.7592595147896056`*^9, 
+  3.7592595176446123`*^9}, {3.759259681275979*^9, 
+  3.7592596826439815`*^9}},ExpressionUUID->"4ca76f34-e466-4e42-b6e8-\
+7e4f987661d1"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{958, 988},
+WindowMargins->{{Automatic, -1927}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (February 12, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 313, 5, 96, "Title",ExpressionUUID->"efc65e53-0a0d-42b8-8ef5-e94c7a5d94d6"],
+Cell[CellGroupData[{
+Cell[918, 31, 215, 4, 67, "Chapter",ExpressionUUID->"886746eb-c2b6-4b0e-92a9-52fe508abbf1"],
+Cell[CellGroupData[{
+Cell[1158, 39, 353, 7, 138, "Subchapter",ExpressionUUID->"bc08db69-2c2a-4b2a-a036-8bf21a2b6a27"],
+Cell[CellGroupData[{
+Cell[1536, 50, 204, 3, 67, "Section",ExpressionUUID->"88cde30a-e0d5-4b91-9ed2-faa0bf63be38"],
+Cell[1743, 55, 237, 6, 34, "Text",ExpressionUUID->"bd30e318-073e-478f-9ffa-5f806ab14eb1"],
+Cell[1983, 63, 304, 5, 34, "Text",ExpressionUUID->"4dc1d225-9834-4509-89cb-9a4386acce43"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2324, 73, 217, 4, 67, "Section",ExpressionUUID->"d787b60d-bc5d-478e-8121-3f920fbde9de"],
+Cell[2544, 79, 313, 6, 56, "Text",ExpressionUUID->"a5bb76b3-18c6-4e50-85a3-536fbd11a347"],
+Cell[2860, 87, 354, 6, 34, "Text",ExpressionUUID->"e3a51074-7ecc-48a5-b66d-5353c3a61cf8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3251, 98, 251, 4, 67, "Section",ExpressionUUID->"15719378-b0f4-49e8-ac7c-9efc24986a52"],
+Cell[3505, 104, 286, 7, 34, "Text",ExpressionUUID->"5d345090-efa9-433b-ac4d-4e6a8f319498"],
+Cell[3794, 113, 358, 6, 34, "Text",ExpressionUUID->"4e237e27-0fbb-464c-9d59-a96b9ec7cbb7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4189, 124, 243, 4, 67, "Section",ExpressionUUID->"1a5ad3a9-61a9-4a91-88e7-c66f68a65ffb"],
+Cell[4435, 130, 283, 7, 34, "Text",ExpressionUUID->"a9de1683-3c8b-49b6-990a-35bccade315c"],
+Cell[4721, 139, 407, 6, 34, "Text",ExpressionUUID->"1cd5f458-1077-494e-b68e-cb6130a7e530"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5165, 150, 234, 4, 67, "Section",ExpressionUUID->"80a3f010-e1c5-4a4a-9ee4-fede4984d102"],
+Cell[5402, 156, 249, 4, 34, "Text",ExpressionUUID->"89665f40-5605-47d0-a98b-19889d221c72"],
+Cell[5654, 162, 354, 6, 34, "Text",ExpressionUUID->"ad41e2e5-9336-46e8-bc90-cb0907dd69d2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6045, 173, 248, 4, 67, "Section",ExpressionUUID->"0f5b1657-612d-484e-83d9-d06dd7a76782"],
+Cell[6296, 179, 423, 8, 56, "Text",ExpressionUUID->"b73f317f-0538-4333-8b1b-e7dfea1a6b1b"],
+Cell[6722, 189, 438, 9, 34, "Text",ExpressionUUID->"5cf75334-ab0b-4eb2-9b6c-d4b15c0d039e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7197, 203, 261, 4, 67, "Section",ExpressionUUID->"678bcee8-0bdb-415d-a609-741922762faa"],
+Cell[7461, 209, 341, 7, 34, "Text",ExpressionUUID->"00028829-0221-4585-8b82-c72b05423a4a"],
+Cell[7805, 218, 456, 7, 34, "Text",ExpressionUUID->"4ca76f34-e466-4e42-b6e8-7e4f987661d1"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
