@@ -1,0 +1,187 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7260,        179]
+NotebookOptionsPosition[      5742,        143]
+NotebookOutlinePosition[      6089,        158]
+CellTagsIndexPosition[      6046,        155]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Wolfram Language", "Title",
+ CellChangeTimes->{{3.75925450766825*^9, 3.7592545124766483`*^9}, {
+   3.7592563991884913`*^9, 3.759256399628497*^9}, 3.759259011103176*^9, 
+   3.7592591190783105`*^9, {3.7592591843422313`*^9, 
+   3.7592591871982346`*^9}},ExpressionUUID->"93f1617f-91e6-49c7-986a-\
+66d2bd316fab"],
+
+Cell[CellGroupData[{
+
+Cell["Videos", "Chapter",
+ CellChangeTimes->{{3.759254538596363*^9, 3.7592545462199197`*^9}, {
+   3.759259202143306*^9, 3.759259204798311*^9}, 3.7592597918137426`*^9, 
+   3.759260233355837*^9, {3.7602724044075403`*^9, 3.7602724051595435`*^9}, {
+   3.7602724596728964`*^9, 
+   3.76027248177597*^9}},ExpressionUUID->"6e1377ac-859f-42d6-9180-\
+e777344e395b"],
+
+Cell[CellGroupData[{
+
+Cell["An overview of videos related to the Wolfram Language", "Subchapter",
+ CellChangeTimes->{{3.7592545499004517`*^9, 3.75925457646037*^9}, 
+   3.759259210978356*^9, 3.759259798751042*^9, 3.7592602409478483`*^9, {
+   3.7602724646629133`*^9, 3.7602725005190353`*^9}, {3.7602740681300344`*^9, 
+   3.7602740800900693`*^9}},ExpressionUUID->"499b08c1-7254-4779-ba5e-\
+e45b2db55368"],
+
+Cell[CellGroupData[{
+
+Cell["Wolfram Screencast & Video Gallery", "Section",
+ CellChangeTimes->{{3.7602742607542853`*^9, 
+  3.7602742686411467`*^9}},ExpressionUUID->"932b9b78-101b-407b-8184-\
+05a158631216"],
+
+Cell["\<\
+ Wolfram's home page with a curated list of the best available videos. The \
+best place to start for anyone, from beginning user to advanced Wolfram \
+Language developer\
+\>", "Text",
+ CellChangeTimes->{{3.7602742761766615`*^9, 3.7602742884327145`*^9}, {
+   3.760274335528899*^9, 3.760274381673529*^9}, 3.7602744234647055`*^9, {
+   3.7602746281525106`*^9, 
+   3.760274666527627*^9}},ExpressionUUID->"f868a3cc-759e-40b9-97d7-\
+fdb84ebdbd0d"],
+
+Cell["https://www.wolfram.com/broadcast/", "Text",
+ CellChangeTimes->{
+  3.760274272211158*^9},ExpressionUUID->"ff032904-563d-49da-b861-\
+bf9738328435"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["YouTube", "Section",
+ CellChangeTimes->{{3.759254581547898*^9, 3.759254586683911*^9}, 
+   3.7592592167793612`*^9, 3.7592593264559927`*^9, 3.7592598199732056`*^9, 
+   3.7592602590827904`*^9, {3.7602725336870823`*^9, 3.7602725365990925`*^9}, {
+   3.760272721104414*^9, 3.7602727372214656`*^9}, {3.7602729043095903`*^9, 
+   3.7602729057815933`*^9}},ExpressionUUID->"44c1cd4c-c679-4363-8680-\
+6e90ce2671a6"],
+
+Cell["\<\
+Thousands of hours of recordings including training materials and conference \
+presentations, ranging from introductory materials to full-blown application \
+development guides.\
+\>", "Text",
+ CellChangeTimes->{
+  3.759254617210271*^9, 3.759259222824371*^9, 3.7592593342890053`*^9, 
+   3.7592598276132493`*^9, 3.7592602658508787`*^9, 3.7602727452378435`*^9, {
+   3.7602728537096777`*^9, 3.760272921125275*^9}, {3.7602729619016094`*^9, 
+   3.7602729649346213`*^9}, {3.7602744005525894`*^9, 3.760274424696709*^9}, {
+   3.760274480688902*^9, 
+   3.760274512864003*^9}},ExpressionUUID->"af8d36e1-e4f8-46fd-88ad-\
+45b86b13accb"],
+
+Cell["https://www.youtube.com/user/WolframResearch", "Text",
+ CellChangeTimes->{{3.759254654435692*^9, 3.7592546572510176`*^9}, {
+   3.759255768471407*^9, 3.759255771302414*^9}, {3.7592592290784073`*^9, 
+   3.759259229974409*^9}, {3.7592593393180127`*^9, 3.759259340150014*^9}, {
+   3.759259668251893*^9, 3.7592596691078925`*^9}, 3.75925999229214*^9, 
+   3.7592604014259377`*^9, 
+   3.760272716240394*^9},ExpressionUUID->"8906b425-4b81-4c74-9a95-\
+021474e18505"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Twitch", "Section",
+ CellChangeTimes->{{3.759254581547898*^9, 3.759254586683911*^9}, 
+   3.7592592167793612`*^9, 3.7592593264559927`*^9, 3.7592598199732056`*^9, 
+   3.7592602590827904`*^9, {3.7602725336870823`*^9, 3.7602725365990925`*^9}, {
+   3.760272721104414*^9, 3.7602727372214656`*^9}, {3.7602729043095903`*^9, 
+   3.7602729057815933`*^9}, {3.7602733551799192`*^9, 
+   3.7602733559239206`*^9}},ExpressionUUID->"c6d091c0-3f86-4b79-86a6-\
+11647fbc52d6"],
+
+Cell["\<\
+CEO Stephen Wolfram's personal channel with livestreamed Wolfram Language \
+design discussions: a great resource for advanced Wolfram Language developers.\
+\>", "Text",
+ CellChangeTimes->{
+  3.759254617210271*^9, 3.759259222824371*^9, 3.7592593342890053`*^9, 
+   3.7592598276132493`*^9, 3.7592602658508787`*^9, 3.7602727452378435`*^9, {
+   3.7602728537096777`*^9, 3.760272921125275*^9}, {3.7602729619016094`*^9, 
+   3.7602729649346213`*^9}, {3.7602733586439314`*^9, 3.760273397172057*^9}, {
+   3.76027345743725*^9, 3.7602734929023676`*^9}, {3.7602744257127104`*^9, 
+   3.760274476503887*^9}},ExpressionUUID->"2046185d-ddbd-403b-93a6-\
+cf3e0bd393bf"],
+
+Cell["https://www.twitch.tv/stephen_wolfram/videos", "Text",
+ CellChangeTimes->{{3.759254654435692*^9, 3.7592546572510176`*^9}, {
+   3.759255768471407*^9, 3.759255771302414*^9}, {3.7592592290784073`*^9, 
+   3.759259229974409*^9}, {3.7592593393180127`*^9, 3.759259340150014*^9}, {
+   3.759259668251893*^9, 3.7592596691078925`*^9}, 3.75925999229214*^9, 
+   3.7592604014259377`*^9, 3.760272716240394*^9, 
+   3.7602734042214575`*^9},ExpressionUUID->"e4a3194d-b328-4536-b9ef-\
+94dc96f105cf"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{958, 988},
+WindowMargins->{{Automatic, 325}, {Automatic, 64}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (February 25, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 313, 5, 96, "Title",ExpressionUUID->"93f1617f-91e6-49c7-986a-66d2bd316fab"],
+Cell[CellGroupData[{
+Cell[918, 31, 355, 6, 67, "Chapter",ExpressionUUID->"6e1377ac-859f-42d6-9180-e777344e395b"],
+Cell[CellGroupData[{
+Cell[1298, 41, 379, 5, 64, "Subchapter",ExpressionUUID->"499b08c1-7254-4779-ba5e-e45b2db55368"],
+Cell[CellGroupData[{
+Cell[1702, 50, 183, 3, 67, "Section",ExpressionUUID->"932b9b78-101b-407b-8184-05a158631216"],
+Cell[1888, 55, 450, 9, 56, "Text",ExpressionUUID->"f868a3cc-759e-40b9-97d7-fdb84ebdbd0d"],
+Cell[2341, 66, 152, 3, 34, "Text",ExpressionUUID->"ff032904-563d-49da-b861-bf9738328435"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2530, 74, 409, 6, 67, "Section",ExpressionUUID->"44c1cd4c-c679-4363-8680-6e90ce2671a6"],
+Cell[2942, 82, 633, 12, 56, "Text",ExpressionUUID->"af8d36e1-e4f8-46fd-88ad-45b86b13accb"],
+Cell[3578, 96, 462, 7, 34, "Text",ExpressionUUID->"8906b425-4b81-4c74-9a95-021474e18505"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4077, 108, 462, 7, 67, "Section",ExpressionUUID->"c6d091c0-3f86-4b79-86a6-11647fbc52d6"],
+Cell[4542, 117, 659, 11, 56, "Text",ExpressionUUID->"2046185d-ddbd-403b-93a6-cf3e0bd393bf"],
+Cell[5204, 130, 486, 7, 34, "Text",ExpressionUUID->"e4a3194d-b328-4536-b9ef-94dc96f105cf"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

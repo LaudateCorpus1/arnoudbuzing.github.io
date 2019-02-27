@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12524,        317]
-NotebookOptionsPosition[     10898,        280]
-NotebookOutlinePosition[     11247,        295]
-CellTagsIndexPosition[     11204,        292]
+NotebookDataLength[     11360,        287]
+NotebookOptionsPosition[     10176,        258]
+NotebookOutlinePosition[     10522,        273]
+CellTagsIndexPosition[     10479,        270]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -25,11 +25,12 @@ Cell[BoxData[
   RowBox[{"ParentDirectory", "[", 
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}]}]], "Input",
  CellChangeTimes->{{3.7592569467583847`*^9, 3.7592569669784403`*^9}},
- CellLabel->"In[2]:=",ExpressionUUID->"8164aa3a-8813-4285-b161-f879f236caee"],
+ CellLabel->"In[55]:=",ExpressionUUID->"8164aa3a-8813-4285-b161-f879f236caee"],
 
 Cell[BoxData["\<\"D:\\\\github\\\\arnoudbuzing.github.io\"\>"], "Output",
- CellChangeTimes->{3.759256967968443*^9, 3.7592586387012644`*^9},
- CellLabel->"Out[2]=",ExpressionUUID->"339a92ea-581a-4509-ae39-63e58a0be16f"]
+ CellChangeTimes->{3.759256967968443*^9, 3.7592586387012644`*^9, 
+  3.7602709665974236`*^9},
+ CellLabel->"Out[55]=",ExpressionUUID->"457c3033-34dd-4298-aae5-ffb69fa48fe3"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -40,7 +41,7 @@ Cell[BoxData[
     "}"}], "]"}], "]"}]], "Input",
  CellChangeTimes->{{3.7592523987352343`*^9, 3.7592524022386737`*^9}, 
    3.7592565614622903`*^9, {3.759256978587462*^9, 3.7592570003066006`*^9}},
- CellLabel->"In[3]:=",ExpressionUUID->"3aeb08c3-7018-4743-90f3-3eb0ab48d0c9"],
+ CellLabel->"In[99]:=",ExpressionUUID->"3aeb08c3-7018-4743-90f3-3eb0ab48d0c9"],
 
 Cell[CellGroupData[{
 
@@ -58,11 +59,12 @@ Cell[BoxData[
     RowBox[{"basedir", ",", "\"\<index.nb\>\""}], "}"}], "]"}], 
   "]"}]], "Input",
  CellChangeTimes->{{3.7592586891733637`*^9, 3.75925869794738*^9}},
- CellLabel->"In[6]:=",ExpressionUUID->"de9b2377-44a3-4e74-ad19-d061eaef65ec"],
+ CellLabel->"In[79]:=",ExpressionUUID->"de9b2377-44a3-4e74-ad19-d061eaef65ec"],
 
 Cell[BoxData["\<\"D:\\\\github\\\\arnoudbuzing.github.io\\\\\"\>"], "Output",
- CellChangeTimes->{{3.759258693459375*^9, 3.7592586982353826`*^9}},
- CellLabel->"Out[6]=",ExpressionUUID->"d453c438-7d6e-4290-b541-a2226c876132"]
+ CellChangeTimes->{{3.759258693459375*^9, 3.7592586982353826`*^9}, 
+   3.760270980410471*^9, 3.760274914895859*^9},
+ CellLabel->"Out[79]=",ExpressionUUID->"a133a159-7e34-4108-b286-6cae5df18cd2"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -194,65 +196,33 @@ Cell[BoxData[
    "]"}]}]], "Input",
  CellChangeTimes->{{3.7592585911708107`*^9, 3.7592586655933266`*^9}, {
   3.7592587175294156`*^9, 3.7592589784830084`*^9}, {3.7592592566021185`*^9, 
-  3.759259291215824*^9}},
- CellLabel->"In[14]:=",ExpressionUUID->"1dba8524-d12b-46bd-b919-547b67fa51e2"],
+  3.759259291215824*^9}, {3.7602750782900257`*^9, 3.760275092969084*^9}},
+ CellLabel->"In[95]:=",ExpressionUUID->"1dba8524-d12b-46bd-b919-547b67fa51e2"],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
- RowBox[{"build", "[", 
-  RowBox[{"FileNameJoin", "[", 
-   RowBox[{"{", 
-    RowBox[{"basedir", ",", "\"\<index.nb\>\""}], "}"}], "]"}], 
-  "]"}]], "Input",
- CellChangeTimes->{{3.7592586256442423`*^9, 3.7592586497382975`*^9}},
- CellLabel->"In[9]:=",ExpressionUUID->"0f3635a7-29a7-4e66-b944-21e8baded837"],
-
-Cell[BoxData["\<\"D:\\\\github\\\\arnoudbuzing.github.io\\\\index.html\"\>"], \
-"Output",
- CellChangeTimes->{
-  3.7592586500403013`*^9, {3.759258991256071*^9, 3.7592590143301797`*^9}},
- CellLabel->"Out[9]=",ExpressionUUID->"68187c84-0271-4f58-b7eb-8950302d85a9"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"files", "=", 
-  RowBox[{"FileNames", "[", 
-   RowBox[{"\"\<*.nb\>\"", ",", 
-    RowBox[{"FileNameJoin", "[", 
-     RowBox[{"{", 
-      RowBox[{"basedir", ",", "\"\<wolfram\>\""}], "}"}], "]"}]}], 
-   "]"}]}]], "Input",
- CellChangeTimes->{{3.7592590617069*^9, 3.7592590869588757`*^9}},
- CellLabel->"In[37]:=",ExpressionUUID->"150765c5-8897-4f6e-8995-ed43c00127cd"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"\<\"D:\\\\github\\\\arnoudbuzing.github.io\\\\wolfram\\\\bindings.\
-nb\"\>", ",", \
-"\<\"D:\\\\github\\\\arnoudbuzing.github.io\\\\wolfram\\\\communities.nb\"\>",
-    ",", "\<\"D:\\\\github\\\\arnoudbuzing.github.io\\\\wolfram\\\\editors.nb\
-\"\>", ",", \
-"\<\"D:\\\\github\\\\arnoudbuzing.github.io\\\\wolfram\\\\github.nb\"\>", 
-   ",", "\<\"D:\\\\github\\\\arnoudbuzing.github.io\\\\wolfram\\\\index.nb\"\>\
-", ",", "\<\"D:\\\\github\\\\arnoudbuzing.github.io\\\\wolfram\\\\out.nb\"\>"}\
-], "}"}]], "Output",
- CellChangeTimes->{3.7592590877719345`*^9, 3.7592591587217636`*^9, 
-  3.7592596194632826`*^9, 3.759260083284478*^9, 3.759260134122639*^9, 
-  3.7592605881656756`*^9, 3.7592606197970486`*^9, 3.7592608881172075`*^9, 
-  3.759260932859473*^9, 3.7592611020782733`*^9, 3.7592611825752845`*^9},
- CellLabel->"Out[37]=",ExpressionUUID->"0de8a954-beb3-45a6-82c2-a86ff7b44b1e"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"build", "[", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{"basedir", ",", "\"\<index.nb\>\""}], "}"}], "]"}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"files", "=", 
+   RowBox[{"FileNames", "[", 
+    RowBox[{"\"\<*.nb\>\"", ",", 
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{"basedir", ",", "\"\<wolfram\>\""}], "}"}], "]"}]}], "]"}]}], 
+  ";"}], "\n", 
  RowBox[{"Map", "[", 
-  RowBox[{"build", ",", "files"}], "]"}]], "Input",
- CellChangeTimes->{{3.759259161335104*^9, 3.759259164936183*^9}},
- CellLabel->"In[38]:=",ExpressionUUID->"90b72c2a-b050-4c0d-9885-57867c90c363"],
+  RowBox[{"build", ",", "files"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7592586256442423`*^9, 3.7592586497382975`*^9}, {
+  3.7602748667223496`*^9, 3.7602748699683633`*^9}, {3.760275785592974*^9, 
+  3.7602757886689777`*^9}, {3.760275837086138*^9, 3.7602758376601424`*^9}},
+ CellLabel->
+  "In[107]:=",ExpressionUUID->"0f3635a7-29a7-4e66-b944-21e8baded837"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -266,21 +236,29 @@ html\"\>",
 \"\>", ",", \
 "\<\"D:\\\\github\\\\arnoudbuzing.github.io\\\\wolfram\\\\index.html\"\>", 
    ",", "\<\"D:\\\\github\\\\arnoudbuzing.github.io\\\\wolfram\\\\out.html\"\>\
-"}], "}"}]], "Output",
+", ",", "\<\"D:\\\\github\\\\arnoudbuzing.github.io\\\\wolfram\\\\videos.html\
+\"\>"}], "}"}]], "Output",
  CellChangeTimes->{
   3.7592591660572004`*^9, 3.7592592358004627`*^9, 3.759259312968953*^9, 
    3.759259466600995*^9, 3.7592595208426175`*^9, 3.7592596235603685`*^9, 
    3.759259694930848*^9, 3.759260086937523*^9, 3.7592601471793494`*^9, 
    3.759260589988964*^9, 3.759260621987569*^9, 3.759260889673261*^9, 
    3.759260934760475*^9, {3.75926110347486*^9, 3.759261149051363*^9}, 
-   3.7592611838374147`*^9},
- CellLabel->"Out[38]=",ExpressionUUID->"acecf76d-6ddd-4f90-85b7-5c20cbea6554"]
+   3.7592611838374147`*^9, 3.760270994159522*^9, 3.760271115586857*^9, 
+   3.760273138461505*^9, 3.760273280315548*^9, 3.7602734268256063`*^9, 
+   3.760273501253396*^9, 3.760274087697092*^9, 3.760274405270607*^9, 
+   3.7602746702996407`*^9, {3.7602748535143075`*^9, 3.7602748715433636`*^9}, 
+   3.760274917996869*^9, {3.760275081166048*^9, 3.7602750989641027`*^9}, {
+   3.7602751675113773`*^9, 3.760275190528045*^9}, 3.7602759431349134`*^9, 
+   3.7602760104591866`*^9},
+ CellLabel->
+  "Out[109]=",ExpressionUUID->"a38c7a23-5ed8-455d-95ad-17df7ed0dfc8"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1920, 997},
-WindowMargins->{{1912, Automatic}, {Automatic, -8}},
-FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (February 12, 2019)",
+WindowSize->{775, 872},
+WindowMargins->{{25, Automatic}, {Automatic, 31}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (February 25, 2019)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -295,28 +273,20 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 285, 5, 28, "Input",ExpressionUUID->"8164aa3a-8813-4285-b161-f879f236caee"],
-Cell[868, 29, 217, 2, 32, "Output",ExpressionUUID->"339a92ea-581a-4509-ae39-63e58a0be16f"]
+Cell[580, 22, 286, 5, 28, "Input",ExpressionUUID->"8164aa3a-8813-4285-b161-f879f236caee"],
+Cell[869, 29, 245, 3, 32, "Output",ExpressionUUID->"457c3033-34dd-4298-aae5-ffb69fa48fe3"]
 }, Open  ]],
-Cell[1100, 34, 420, 8, 28, "Input",ExpressionUUID->"3aeb08c3-7018-4743-90f3-3eb0ab48d0c9"],
+Cell[1129, 35, 421, 8, 28, "Input",ExpressionUUID->"3aeb08c3-7018-4743-90f3-3eb0ab48d0c9"],
 Cell[CellGroupData[{
-Cell[1545, 46, 169, 3, 44, "Subsubsection",ExpressionUUID->"0c20f902-22f9-4216-b49a-45516c469a40"],
+Cell[1575, 47, 169, 3, 44, "Subsubsection",ExpressionUUID->"0c20f902-22f9-4216-b49a-45516c469a40"],
 Cell[CellGroupData[{
-Cell[1739, 53, 323, 7, 28, "Input",ExpressionUUID->"de9b2377-44a3-4e74-ad19-d061eaef65ec"],
-Cell[2065, 62, 223, 2, 32, "Output",ExpressionUUID->"d453c438-7d6e-4290-b541-a2226c876132"]
+Cell[1769, 54, 324, 7, 28, "Input",ExpressionUUID->"de9b2377-44a3-4e74-ad19-d061eaef65ec"],
+Cell[2096, 63, 272, 3, 32, "Output",ExpressionUUID->"a133a159-7e34-4108-b286-6cae5df18cd2"]
 }, Open  ]],
-Cell[2303, 67, 5285, 130, 371, "Input",ExpressionUUID->"1dba8524-d12b-46bd-b919-547b67fa51e2"],
+Cell[2383, 69, 5333, 130, 447, "Input",ExpressionUUID->"1dba8524-d12b-46bd-b919-547b67fa51e2"],
 Cell[CellGroupData[{
-Cell[7613, 201, 318, 7, 28, "Input",ExpressionUUID->"0f3635a7-29a7-4e66-b944-21e8baded837"],
-Cell[7934, 210, 262, 4, 32, "Output",ExpressionUUID->"68187c84-0271-4f58-b7eb-8950302d85a9"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[8233, 219, 387, 9, 28, "Input",ExpressionUUID->"150765c5-8897-4f6e-8995-ed43c00127cd"],
-Cell[8623, 230, 917, 15, 52, "Output",ExpressionUUID->"0de8a954-beb3-45a6-82c2-a86ff7b44b1e"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[9577, 250, 232, 4, 28, "Input",ExpressionUUID->"90b72c2a-b050-4c0d-9885-57867c90c363"],
-Cell[9812, 256, 1058, 20, 52, "Output",ExpressionUUID->"acecf76d-6ddd-4f90-85b7-5c20cbea6554"]
+Cell[7741, 203, 817, 21, 67, "Input",ExpressionUUID->"0f3635a7-29a7-4e66-b944-21e8baded837"],
+Cell[8561, 226, 1587, 28, 147, "Output",ExpressionUUID->"a38c7a23-5ed8-455d-95ad-17df7ed0dfc8"]
 }, Open  ]]
 }, Open  ]]
 }

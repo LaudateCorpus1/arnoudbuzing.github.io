@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11078,        287]
-NotebookOptionsPosition[      8313,        231]
-NotebookOutlinePosition[      8661,        246]
-CellTagsIndexPosition[      8618,        243]
+NotebookDataLength[     12542,        319]
+NotebookOptionsPosition[      9465,        258]
+NotebookOutlinePosition[      9813,        273]
+CellTagsIndexPosition[      9770,        270]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -224,14 +224,41 @@ Cell["blogs.html", "Text",
   3.7592595176446123`*^9}, {3.759259681275979*^9, 
   3.7592596826439815`*^9}},ExpressionUUID->"4ca76f34-e466-4e42-b6e8-\
 7e4f987661d1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Videos", "Section",
+ CellChangeTimes->{{3.759254581547898*^9, 3.759254586683911*^9}, 
+   3.7592592167793612`*^9, 3.7592593264559927`*^9, 3.7592594357676992`*^9, 
+   3.7592595009745846`*^9, {3.7602731744927197`*^9, 
+   3.76027317552573*^9}},ExpressionUUID->"a2e8da89-9896-453d-b950-\
+492d78969290"],
+
+Cell["Videos about the Wolfram Language", "Text",
+ CellChangeTimes->{
+  3.759254617210271*^9, 3.759259222824371*^9, 3.7592593342890053`*^9, 
+   3.759259440575786*^9, 3.759259508335598*^9, {3.76027319234993*^9, 
+   3.7602732026769643`*^9}},ExpressionUUID->"f6a3846f-fb6f-4946-a91f-\
+26b004d83470"],
+
+Cell["videos.html", "Text",
+ CellChangeTimes->{{3.759254654435692*^9, 3.7592546572510176`*^9}, {
+  3.759255768471407*^9, 3.759255771302414*^9}, {3.7592592290784073`*^9, 
+  3.759259229974409*^9}, {3.7592593393180127`*^9, 3.759259340150014*^9}, {
+  3.7592594580709777`*^9, 3.7592594617029843`*^9}, {3.7592595147896056`*^9, 
+  3.7592595176446123`*^9}, {3.759259681275979*^9, 3.7592596826439815`*^9}, {
+  3.7602731785247345`*^9, 
+  3.7602731791407366`*^9}},ExpressionUUID->"3c24d9cd-81ab-4af0-a520-\
+525c8659e4e7"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{958, 988},
-WindowMargins->{{Automatic, -1927}, {Automatic, 0}},
-FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (February 12, 2019)",
+WindowMargins->{{Automatic, 252}, {Automatic, 109}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (February 25, 2019)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -285,6 +312,11 @@ Cell[CellGroupData[{
 Cell[7197, 203, 261, 4, 67, "Section",ExpressionUUID->"678bcee8-0bdb-415d-a609-741922762faa"],
 Cell[7461, 209, 341, 7, 34, "Text",ExpressionUUID->"00028829-0221-4585-8b82-c72b05423a4a"],
 Cell[7805, 218, 456, 7, 34, "Text",ExpressionUUID->"4ca76f34-e466-4e42-b6e8-7e4f987661d1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8298, 230, 303, 5, 67, "Section",ExpressionUUID->"a2e8da89-9896-453d-b950-492d78969290"],
+Cell[8604, 237, 296, 5, 34, "Text",ExpressionUUID->"f6a3846f-fb6f-4946-a91f-26b004d83470"],
+Cell[8903, 244, 510, 8, 34, "Text",ExpressionUUID->"3c24d9cd-81ab-4af0-a520-525c8659e4e7"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
